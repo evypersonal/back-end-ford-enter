@@ -31,5 +31,19 @@ Query - é uma lista de operações
   "fiat@fiat.com"
 );`
 
+
+## Comando SELECT
 - É possivel visualizar o que foi inserido:
 `SELECT * FROM bancotest.fornecedores;`
+
+- Podemos selecionar os campos também para visualização
+`SELECT nome FROM bancotest.fornecedores`
+
+- Podemos selecionar mais de um campo:
+`select modelo, ano from bancotest.carros`
+
+- Podemos visualizar a tabela organizada de forma crescente
+`select * from bancotest.carros order by modelo asc`
+
+- Podemos visualizar a tabela organizada de forma decrescente
+`select * from bancotest.carros order by modelo desc`
