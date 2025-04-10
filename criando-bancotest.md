@@ -58,3 +58,36 @@ Query - é uma lista de operações
   idAuthor INT(4),
   FOREIGN KEY (idAuthor) REFERENCES author(id)
 );`
+
+## Filtros na tabela
+### filtrar uma quantidade especifica de resultado
+
+`SELECT * FROM bancoteste.carros limit 2, 5`
+* nesse caso ele pegará os indices após o id '2', e trazer os '5' após
+
+### fazer um filtro através da primeira letra após selecionar o campo
+
+`SELECT * FROM bancoteste.carros where placa like 'fi%'`
+* nesse caso ele trará os resultados que começam com as iniciais 'fi', no campo 'placa'
+
+### fazer um filtro através da última letra após selecionar o campo
+
+`SELECT * FROM bancoteste.carros where placa like '%fi'`
+* nesse caso ele trará os resultados que começam com os finais 'fi', no campo 'placa'
+
+### fazer um filtro através de uma posição do caracter
+
+`SELECT * FROM bancoteste.carros where placa like '______9%'`
+* nesse caso ele irá ignorar a quantidade de 'undeline' nesse caso são 6, e na 7º posição ele trará com final '9'.
+
+### fazer filtro na penúltima letra
+
+`SELECT * FROM bancoteste.carros where placa like '%8_'`
+* nesse caso ele irá filtrar quais dados possuem o '8' como penúltimo caracter
+
+### apresentarna tabela apenas a quantidade de caracter que desejar
+
+`SELECT left(carroceria, 3) from bancoteste.carros`
+* nesse caso ele trará as 3 primeiras caracteres da esquerda para direita no campo 'carroceria'
+
+
