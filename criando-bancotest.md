@@ -47,3 +47,14 @@ Query - é uma lista de operações
 
 - Podemos visualizar a tabela organizada de forma decrescente
 `select * from bancotest.carros order by modelo desc`
+
+## Chave estrangeira
+- para a adição da chave estrageira é necessário criar uma nova tabela, criar um campo no qual será inserido a relação, e por fim definir esse campo como FOREIGN KEY referenciando a outra tabela, no qual a PRIMARY KEY será a relação.
+
+`CREATE TABLE books (
+  id INT (4) AUTO_INCREMENT PRIMARY KEY,
+  titulo VARCHAR(50),
+  ano INT(4),
+  idAuthor INT(4),
+  FOREIGN KEY (idAuthor) REFERENCES author(id)
+);`
