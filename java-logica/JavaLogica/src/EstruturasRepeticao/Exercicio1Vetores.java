@@ -2,7 +2,7 @@ package LacosRepeticao;
 
 import java.util.Scanner;
 
-public class Exercicio1WhileOperacaoMat {
+public class Exercicio1Vetores {
 
 	public static void main(String[] args) {
 		
