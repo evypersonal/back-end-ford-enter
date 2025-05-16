@@ -4,20 +4,23 @@ import java.util.Scanner;
 
 public class Carro {
 	public static void main(String[] args) {
+		Scanner ler=new Scanner(System.in);
+		System.out.println("Descreva a cor do carro:");
+		String cor;
+		ler.nextLine();
+		cor = ler.nextLine();
 		
 //		Criando os objetos
-		ModeloCarro ford= new ModeloCarro();
+//		ModeloCarro ford= new ModeloCarro(cor);
 		ModeloCarro fiat= new ModeloCarro();
 		ModeloCarro bmw= new ModeloCarro();
 		
 //		Definindo a cor do carro
-		Scanner ler=new Scanner(System.in);
-		System.out.println("Descreva a cor do carro:");
-		String cor;
-		cor = ler.next();
 		
 //		Imprimindo o estado atual
-		ford.estado();
+//		ford.estado();
+		fiat.estado();
+		bmw.estado();
 		
 		
 	}
