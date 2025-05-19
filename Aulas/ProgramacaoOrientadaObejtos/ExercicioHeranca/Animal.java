@@ -7,6 +7,8 @@ public abstract class Animal {
 	protected int idade;
 	private int peso;
 	protected double altura;
+	private String locomoção;
+	
 	
 	public void aniversario() {
 		this.idade++;
@@ -42,6 +44,14 @@ public abstract class Animal {
 
 	public void setIdade(int idade) {
 		this.idade = idade;
+	}
+
+	public String getLocomoção() {
+		return locomoção;
+	}
+
+	public void setLocomoção(String locomoção) {
+		this.locomoção = locomoção;
 	}
 	
 }
