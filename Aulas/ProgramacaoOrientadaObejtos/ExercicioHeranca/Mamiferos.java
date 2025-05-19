@@ -4,6 +4,7 @@ public class Mamiferos extends Animal{
 //	terrestre; aquatico; voador
 	private String habitat;
 	private boolean pelagem;
+	private String alimentação;
 	
 	
 	public void crescer(int idade) 
