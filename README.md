@@ -24,11 +24,12 @@ Durante o curso, são realizadas diversas atividades práticas, desafios e proje
 
 ```bash
 📁 backend-ford-enter
-├── 📂 aulas             # Materiais e códigos desenvolvidos durante as aulas
-├── 📂 desafios          # Desafios propostos em sala
-├── 📂 projetos          # Projetos práticos desenvolvidos no curso
-├── 📂 imagens           # Imagens para documentação e README
-└── README.md            # Este arquivo de documentação
+├── 📂 Aulas                # Materiais e códigos desenvolvidos durante as aulas
+    ├── 📂 APIservices              # Projetos de CRUD desenvolvidos em aula
+    ├── 📂 BancoDeDados             # Introdução ao banco de dados
+    ├── 📂 JavaLogica               # Conceitos de lógica de programação
+    └── 📂 ProgramacaoOrientadaObjetos              # Conceitos de POO em Java
+└── README.md               # Documentação do repositório~
 ````
 
 ## ✍️ Autor
